@@ -1,0 +1,18 @@
+<template>
+  <div>
+    <h3>Take a picture of your document</h3>
+    <photo-scan debug="false"></photo-scan>
+  </div>
+</template>
+
+<script>
+
+import PhotoScan from './components/photoscan'
+
+export default {
+  name: 'photoscan-app',
+  components: {
+    PhotoScan
+  }
+}
+</script>
