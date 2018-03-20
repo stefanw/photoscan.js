@@ -16,7 +16,10 @@ module.exports = {
     rules: [
       {
         test: /\.worker\.js$/,
-        use: { loader: 'worker-loader' }
+        use: {
+          loader: 'worker-loader',
+          options: { name: '[name].js' }
+        }
       },
       {
         test: /\.css$/,
